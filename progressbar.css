@@ -1,0 +1,40 @@
+.ul-list {
+    list-style: none;
+    position: relative;
+  
+}
+
+.ul-list::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: calc(96%);
+    left: 24px;
+    top: 10px;
+    background-color: #dee6ed;
+}
+
+.ul-list li {
+    padding: 48px 0px;
+}
+
+.ul-list li a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.ul-list li a:before {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border:3px solid #3f80ea;
+    width: 20px;
+    height: 20px;
+    left: 15px;
+    border-radius: 50%;
+    margin-top: -46px;
+    z-index: 1;
+
+
+}

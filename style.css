@@ -15,6 +15,13 @@ o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
 #sidebar.active {
     margin-left: -300px;
 }
+.mobileactive {
+      position: fixed;
+    z-index: 1;
+    height: 100vh;
+    margin-left: 0px !important;
+
+}
 .wrapper{
 	display: flex;
 	text-decoration: none;
@@ -33,6 +40,9 @@ o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
 	background: #293042;
 	color: #fff;
 	transition: all 0.3s;
+    /* position: fixed;
+    z-index: 300 !important;
+    height: 100vh; */
 }
 
 #content{
@@ -75,7 +85,7 @@ o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #sidebar {
         margin-left: -300px;
 
@@ -203,6 +213,7 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" 88""Yb Yb   dP  8I  
     margin:0px;
     padding: 18px 0px;
 }
+
 .span-text-style
 {
     background-color: rgba(75,191,115,.175);
@@ -210,9 +221,19 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" 88""Yb Yb   dP  8I  
     font-size: 11px;
     padding: 3px;
 }
-.card-last-text
+.img-align 
 {
-    padding:0px 0px 18px 0px;
+    vertical-align: inherit;
+}
+.card-1-title , .card-1-title-text ,.card-1-text
+{
+    color: #82abf8;
+
+}
+.card-1-text
+{
+    font-size: 14px;
+    padding: 18px 0px;
 }
 .span-text-style-danger
 {
@@ -230,4 +251,147 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" 88""Yb Yb   dP  8I  
 .fa-stack-1x
 {
     font-size: 20px;
+}
+
+
+/*
+888888 888888 888888 8888b.      .dP"Y8 888888  dP""b8 888888 88  dP"Yb  88b 88
+88__   88__   88__    8I  Yb     `Ybo." 88__   dP   `"   88   88 dP   Yb 88Yb88
+88""   88""   88""    8I  dY     o.`Y8b 88""   Yb        88   88 Yb   dP 88 Y88
+88     888888 888888 8888Y"      8bodP' 888888  YboodP   88   88  YbodP  88  Y8
+*/
+
+
+.feed-section
+{
+    color: #495057;
+    font-size: .95rem;
+    font-weight: 600;
+}
+.time-div
+{
+    margin-top: -3px !important;
+}
+.time-div-text
+{
+    font-size: 80%;
+    color: gray;
+    white-space: nowrap;
+    
+    
+}
+
+.daily-feed-text
+{
+    font-size: 15px;
+    color:rgb(134, 134, 134)
+}
+.daily-feed-text > strong
+{
+    color: black;
+}
+.daily-feed-time 
+{
+    font-size: 14px;
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.card-text-body
+{
+    font-size: 85%;
+    color:gray;
+}
+hr 
+{
+    background-color: rgb(131, 131, 131);
+}
+
+
+/*
+Yb        dP 888888 888888 88  dP 88     Yb  dP     .dP"Y8    db    88     888888 .dP"Y8     .dP"Y8 888888  dP""b8 888888 88  dP"Yb  88b 88
+ Yb  db  dP  88__   88__   88odP  88      YbdP      `Ybo."   dPYb   88     88__   `Ybo."     `Ybo." 88__   dP   `"   88   88 dP   Yb 88Yb88
+  YbdPYbdP   88""   88""   88"Yb  88  .o   8P       o.`Y8b  dP__Yb  88  .o 88""   o.`Y8b     o.`Y8b 88""   Yb        88   88 Yb   dP 88 Y88
+   YP  YP    888888 888888 88  Yb 88ood8  dP        8bodP' dP""""Yb 88ood8 888888 8bodP'     8bodP' 888888  YboodP   88   88  YbodP  88  Y8
+*/
+
+.dropdown-weekly-sales
+{
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+.dropdown-weekly-sales:hover
+{
+    text-decoration: none;
+    color: gray;
+
+}
+.table-text-style{
+    color:#a7a7a7; 
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.text-succss
+{
+    color: #71ff7dcf;
+}
+
+
+/* progressbar div */
+
+.chat-title 
+{
+    font-size: 15px;
+    padding:0px 0px;
+}
+
+.chat-time
+{
+    font-size: 13px;
+    color: rgb(189, 189, 189);
+    padding:0px 10px;
+
+}
+.chat-detail
+{
+    font-size: 13px;
+    color: rgb(141, 141, 141);
+
+}
+
+
+
+/*
+888888    db    88""Yb 88     888888     .dP"Y8 888888  dP""b8 888888 88  dP"Yb  88b 88
+  88     dPYb   88__dP 88     88__       `Ybo." 88__   dP   `"   88   88 dP   Yb 88Yb88
+  88    dP__Yb  88""Yb 88  .o 88""       o.`Y8b 88""   Yb        88   88 Yb   dP 88 Y88
+  88   dP""""Yb 88oodP 88ood8 888888     8bodP' 888888  YboodP   88   88  YbodP  88  Y8
+*/
+
+
+.table-icon-style
+{
+    color:rgb(185, 185, 185);
+}
+.table-headings
+{
+    color:gray;
+    font-size: 14px;
+}
+.table-text
+{
+    font-size: 14px;
+    color: rgb(121, 121, 121);
+}
+
+
+.table2 > tbody, td, tfoot, th, thead, tr {
+    padding: 12px !important;
+}
+.entry-text 
+{
+    font-size: 14px;
+    color: rgb(121, 121, 121);
 }

@@ -10,6 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="progressbar.css">
 </head>
 
 <body>
@@ -25,7 +26,8 @@ o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
         <nav id="sidebar">
             <div class="container ms-2">
                 <div class="logo mt-4">
-                    <h4 class="text-center"> <i class="fa fa-gitlab text-primary"></i> AppStack</h4>
+                    <h4 class="text-center"> <i class="fa fa-gitlab text-primary"></i> AppStack <i onclick="closeSidebar()" class="fa fa-close float-end d-block d-md-none me-4"></i></h4>
+                    
                 </div>
 
 
@@ -213,10 +215,10 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
 -->
         <div id="content">
             <nav class="navbar navbar-expand-lg bg-white  ">
-                <div class="container-fluid row py-2">
+                <div class="container-fluid pe-2 p-md-auto row py-2 m-0 m-md-auto">
 
 
-                    <div class="col-6">
+                    <div class="col-6 p-0 p-md-auto ">
                         <!-- ******** -->
                         <!-- left side -->
                         <!-- ******** -->
@@ -226,7 +228,7 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                                 <i class="fa fa-bars"></i>
                             </button>
 
-                            <div class="input-field  ms-3 ">
+                            <div class="input-field  ms-3 d-none d-lg-block ">
                                 <div class="input-group   ">
                                     <input type="text" class="form-control border-0 bg-light  input-field input-text"
                                         placeholder="Search Projects" aria-label="Username"
@@ -283,7 +285,7 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                     <!-- ******** -->
                     <!-- right side -->
                     <!-- ******** -->
-                    <div class="col-6">
+                    <div class="col-6 p-0 p-md-auto">
                         <div class="d-flex justify-content-end align-items-center">
                            <div class="message-icon-div icon-spacing">
                                 <i class="fa fa-comment-o position-relative message-icon ">  
@@ -315,8 +317,10 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                            <div class="profile-dropdown ">
                                 <div class="btn-group">
                                     <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                                        <img src="https://randomuser.me/api/portraits/men/85.jpg" height="30" class="rounded-circle" alt="">
-                                        Chris Ramsay
+                                        <img src="https://randomuser.me/api/portraits/men/85.jpg" height="30" class="rounded-circle d-none d-md-inline" alt="">
+                                        <span class="d-none d-md-inline">Chris Ramsay</span>
+                                        <i class="fa fa-cog d-inline d-md-none"></i>
+
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-lg-end">
                                     <li><button class="dropdown-item" type="button">Action</button></li>
@@ -367,17 +371,17 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                 <!-- ************** -->
 
                 <div class="row mt-4">
-                    <div class="col-3 ">
+                    <div class="col-12 col-sm-6 col-md-6 mb-3  ">
                         <div class="card border-0 pt-4 px-3 shadow card-first-div" >
                             <div class="row">
                                 <div class="col-8">
-                                    <h5>Welcome</h5>
-                                    <h5>Back, Chris!</h5>
-                                    <p class="m-0">AppStack</p>
-                                    <p class="m-0 card-last-text">Dashbaord</p>
+                                    <h5 class="card-1-title">Welcome</h5>
+                                    <h5 class="card-1-title-text">Back, Chris!</h5>
+                                    <p class="m-0 card-1-text">AppStack,Dashboard</p>
+
                                 </div>
-                                <div class="col-4">
-                                    <img src="images/customer-support.png" width="100%" alt="">
+                                <div class="col-4 mt-auto">
+                                    <img src="images/customer-support.png" class="img-align" width="100%" alt="">
 
                                 </div>
                             </div>
@@ -386,7 +390,7 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                         </div>
                     </div>
 
-                    <div class="col-3 ">
+                    <div class="col-12 col-sm-6 col-md-6  mb-3 ">
                         <div class="card border-0 pt-4 px-3 shadow">
                             <div class="row">
                                 <div class="col-8">
@@ -400,13 +404,12 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                                             <i class="fa fa-circle fa-stack-2x icon-background"></i>
                                             <i class="fa fa-usd fa-stack-1x"></i>
                                           </span>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-12 col-sm-6 col-md-6 mb-3 ">
                         <div class="card border-0 pt-4 px-3 shadow">
                             <div class="row">
                                 <div class="col-8">
@@ -425,7 +428,7 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                             </div>
                         </div>
                     </div>
-                    <div class="col-3 ">
+                    <div class="col-12 col-sm-6 col-md-6 mb-3  ">
                         <div class="card border-0 pt-4 px-3 shadow">
                             <div class="row">
                                 <div class="col-8">
@@ -451,8 +454,360 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
                     
                 </div>
 
+                <!-- ****************** -->
+                <!-- Daily Feed Section -->
+                <!-- ****************** -->
+
+                <div class="row mt-4">
+                    <div class="col-12 col-md-8 col-lg-5 ">
+                        <div class="card border-0 shadow">
+                           <div class="px-3 py-4">
+                              
+                                   <div class="card-title "> <span class="feed-section">Daily Feed</span>  <span class="badge bg-primary float-end">Primary</span> </div>
+                                    <!-- ***** -->
+                                    <!-- 1st row -->
+                                    <!-- ***** -->
+                                   <div class="d-flex justify-content-between mt-4">
+                                        <div class="img-div">
+                                            <img src="https://randomuser.me/api/portraits/men/85.jpg" height="40" class="rounded-circle" alt="">
+                                        </div>    
+                                        <div class="text-div ms-2">
+
+                                            <p class="daily-feed-text m-0  "> <strong > Ashley Brigs </strong>  Started Following <strong>Stacie Hall</strong></p>
+                                            <p class=" daily-feed-time"> <small>Today at 7:21pm</small> </p>
+                                        </div>
+                                        <div class="time-div ">
+                                            <small class="time-div-text " >5m ago</small >
+                                        </div>
+                                   </div>
+                                   <hr>
+                                   <!-- ***** -->
+                                    <!-- 2nd row -->
+                                    <!-- ***** -->
+                                   <div class="d-flex justify-content-between mt-4">
+                                        <div class="img-div">
+                                            <img src="https://randomuser.me/api/portraits/men/44.jpg" height="40" class="rounded-circle" alt="">
+                                        </div>    
+                                        <div class="text-div ms-2">
+
+                                            <p class="daily-feed-text m-0  "> <strong > Ashley Brigs </strong>  Started Following <strong>Stacie Hall</strong></p>
+                                            <p class=" daily-feed-time"> <small>Today at 7:21pm</small> </p>
+                                        </div>
+                                        <div class="time-div ">
+                                            <small class="time-div-text " >5m ago</small >
+                                        </div>
+                                   </div>
+
+                                   <div class="row">
+                                       <div class="col-11 offset-1 mt-2 ">
+                                            <div class="card-text-body border p-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum at nostrum neque magnam consectetur cumque explicabo,..</div>
+                                       </div>
+                                       
+                                   </div>
+
+                                   <hr>
+                                    <!-- ***** -->
+                                    <!-- 3rd row -->
+                                    <!-- ***** -->
+                                    <div class="d-flex justify-content-between mt-4">
+                                        <div class="img-div">
+                                            <img src="https://randomuser.me/api/portraits/men/51.jpg" height="40" class="rounded-circle" alt="">
+                                        </div>    
+                                        <div class="text-div ms-2">
+
+                                            <p class="daily-feed-text m-0  "> <strong > Ashley Brigs </strong>  Started Following <strong>Stacie Hall</strong></p>
+                                            <p class=" daily-feed-time"> <small>Today at 7:21pm</small> </p>
+                                        </div>
+                                        <div class="time-div ">
+                                            <small class="time-div-text " >5m ago</small >
+                                        </div>
+                                   </div>
+                                   <hr>
+
+                                   <div class="d-grid gap-2 col-12 mx-auto">
+                                    <button class="btn btn-primary btn-sm mt-3" type="button">Load More</button>
+                                  </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ****************** -->
+                <!-- Weekly Sales Section -->
+                <!-- ****************** -->
+
+                <div class="row mt-4">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <div class="card border-0 shadow">
+                            <div class="px-3 py-4">
+                              
+                            <!-- ****************** -->
+                            <!-- Card 1 Weekly Sale -->
+                            <!-- ****************** -->
+                                <div class="card-title "> <span class="feed-section">Weekly Sales</span> 
+                                     <span class=" float-end"> 
+                                        <div class="dropdown">
+                                            <a class="dropdown-weekly-sales " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <i class="fa fa-ellipsis-h"></i>
+                                            </a>
+                                          
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>     
+                                    </span> 
+                                </div>
+
+
+                                <table class="table">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col" class="table-text-style">Source</th>
+                                        <th scope="col"class="table-text-style"  >Revenue</th>
+                                        <th scope="col"class="table-text-style">Value</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td class="table-text-style"> <span> <i class="fa fa-square text-primary"></i></span> Direct </td>
+                                        <td class="table-text-style" >$ 2602</td>
+                                        <td class="table-text-style text-succss" >+43%</td>
+
+                                      </tr>
+                                      <tr>
+                                        <td class="table-text-style" scope=""> <span> <i class="fa fa-square text-warning"></i></span> Direct </td>
+                                        <td class="table-text-style">$ 2602</td>
+                                        <td class="table-text-style text-succss">+43%</td>
+
+                                      </tr>
+                                      <tr>
+                                        <td  class="table-text-style"  > <span> <i class="fa fa-square text-danger"></i></span> Direct </td>
+                                        <td  class="table-text-style"  >$ 2602</td>
+                                        <td  class="table-text-style text-succss"  >+43%</td>
+
+                                      </tr>
+                                      <tr>
+                                        <td class="table-text-style"> <span> <i class="fa fa-square"></i></span> Direct </td>
+                                        <td class="table-text-style">$ 2602</td>
+                                        <td class="table-text-style text-succss">+43%</td>
+
+                                      </tr>
+                                     
+                                    </tbody>
+                                  </table>
+                            </div>  
+                        </div>
+                    </div>
+                           <!-- ****************** -->
+                            <!-- Card 2 Progress -->
+                            <!-- ****************** -->
+                    <div class="col-12 col-lg-6">
+                        <div class="card border-0 shadow">
+                            <div class="px-3 py-4">
+                              
+                            <!-- ****************** -->
+                            <!-- Card 1 Weekly Sale -->
+                            <!-- ****************** -->
+                                <div class="card-title "> <span class="feed-section">Appointments</span> 
+                                     <span class=" float-end"> 
+                                        <div class="dropdown">
+                                            <a class="dropdown-weekly-sales " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <i class="fa fa-ellipsis-h"></i>
+                                            </a>
+                                          
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>     
+                                    </span> 
+                                </div>
+
+                                <!-- ************ -->
+                                <!-- ************ -->
+                                <!-- Progress bar -->
+                                <!-- ************ -->
+                                <!-- ************ -->
+                                <div class="row mt-4 ">
+                                    <div class="col-2 p-0">
+                                        <ul class="ul-list">
+                                            <li>
+                                                <a href="#" class="active">
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="active"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="active"></a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="active"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-10 p-0">
+                                            <div class="chat-text d-flex justify-content-between">
+                                                <p class="chat-title mb-2">Chat with Ashley and Alex</p>
+                                                <p class="chat-time m-0">30m ago</p>
+                                            </div>
+                                            <p class="chat-detail pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur in aspernatur corrupti eum incidunt. Accusantium, modi. Voluptates, tenetur eius!</p>
+                                            <div class="chat-text d-flex justify-content-between">
+                                                <p class="chat-title mb-2">Chat with Ashley and Alex</p>
+                                                <p class="chat-time m-0">30m ago</p>
+                                            </div>
+                                            <p class="chat-detail pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur in aspernatur corrupti eum incidunt. Accusantium, modi. Voluptates, tenetur eius!</p>
+                                            <div class="chat-text d-flex justify-content-between">
+                                                <p class="chat-title mb-2">Chat with Ashley and Alex</p>
+                                                <p class="chat-time m-0">30m ago</p>
+                                            </div>
+                                            <p class="chat-detail pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur in aspernatur corrupti eum incidunt. Accusantium, modi. Voluptates, tenetur eius!</p>
+                                            <div class="chat-text d-flex justify-content-between">
+                                                <p class="chat-title mb-2">Chat with Ashley and Alex</p>
+                                                <p class="chat-time m-0">30m ago</p>
+                                            </div>
+                                            <p class="chat-detail pe-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda tenetur in aspernatur corrupti eum incidunt. Accusantium, modi. Voluptates, tenetur eius!</p>
+                                    </div>
+
+                                </div>
+
+
+                         
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <!-- ****************** -->
+                <!-- Latest Projects Section -->
+                <!-- ****************** -->
+
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card border-0 shadow">
+                            <div class="px-4 py-4">
+                              
+                            <!-- ****************** -->
+                            <!-- Card 1 Project Table -->
+                            <!-- ****************** -->
+                                <div class="card-title "> <span class="feed-section">Latest Projects</span> 
+                                     <span class=" float-end"> 
+                                        <div class="dropdown">
+                                            <a class="dropdown-weekly-sales " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                              <i class="fa fa-ellipsis-h"></i>
+                                            </a>
+                                          
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </div>     
+                                    </span> 
+                                </div>
+
+
+                                <table class="table table-striped mt-3 table2">
+                                    <thead>
+                                      <tr class="">
+                                        <th scope="col" class="table-headings">
+                                            Name 
+                                            <div class="float-end">
+                                                <i class="fa fa-exchange table-icon-style" style="transform: rotate(90deg);"></i>
+                                            </div>
+                                        </th>
+                                        <th scope="col"class="table-headings d-none d-lg-table-cell ">
+                                            Start Date
+                                            <div class="float-end">
+                                                <i class="fa fa-exchange table-icon-style" style="transform: rotate(90deg);"></i>
+                                            </div>
+                                        </th>
+                                        <th scope="col"class="table-headings d-none d-lg-table-cell ">
+                                            End Date
+                                            <div class="float-end">
+                                                <i class="fa fa-exchange table-icon-style" style="transform: rotate(90deg);"></i>
+                                            </div>
+                                        </th>
+                                        <th scope="col"class="table-headings ">
+                                            Status
+                                            <div class="float-end">
+                                                <i class="fa fa-exchange table-icon-style" style="transform: rotate(90deg);"></i>
+                                            </div>
+                                        </th>
+                                        <th scope="col"class="table-headings ">
+                                            Assignee
+                                            <div class="float-end">
+                                                <i class="fa fa-exchange table-icon-style" style="transform: rotate(90deg);"></i>
+                                            </div>
+                                        </th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      <tr class="p-4">
+                                        <td class="table-text"> Project Fireball </td>
+                                        <td class="table-text d-none d-lg-table-cell" >1/1/2021</td>
+                                        <td class="table-text d-none d-lg-table-cell" >31/1/2021</td>
+                                        <td class="table-text "  >  <span class="badge bg-success">Done</span> </td>
+                                        <td class="table-text " >Carl Jenkins</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-text"> Project Fireball </td>
+                                        <td class="table-text d-none d-lg-table-cell  " >1/1/2021</td>
+                                        <td class="table-text d-none d-lg-table-cell " >31/1/2021</td>
+                                        <td class="table-text" >  <span class="badge bg-danger">cancelled</span> </td>
+                                        <td class="table-text " >Carl Jenkins</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-text"> Project Fireball </td>
+                                        <td class="table-text d-none d-lg-table-cell" >1/1/2021</td>
+                                        <td class="table-text d-none d-lg-table-cell" >31/1/2021</td>
+                                        <td class="table-text" >  <span class="badge bg-success">Done</span> </td>
+                                        <td class="table-text " >Carl Jenkins</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-text"> Project Fireball </td>
+                                        <td class="table-text d-none d-lg-table-cell" >1/1/2021</td>
+                                        <td class="table-text d-none d-lg-table-cell" >31/1/2021</td>
+                                        <td class="table-text" >  <span class="badge bg-warning">incomplete</span> </td>
+                                        <td class="table-text " >Carl Jenkins</td>
+                                      </tr>
+                                      <tr>
+                                        <td class="table-text"> Project Fireball </td>
+                                        <td class="table-text d-none d-lg-table-cell" >1/1/2021</td>
+                                        <td class="table-text d-none d-lg-table-cell" >31/1/2021</td>
+                                        <td class="table-text" >  <span class="badge bg-success">Done</span> </td>
+                                        <td class="table-text " >Carl Jenkins</td>
+                                      </tr>            
+                                    </tbody>
+                                </table>
+                                <div class="table-filters d-flex align-items-center justify-content-between">
+                                    <div class="entries entry-text">
+                                        Showing 6 out of 9 Entries
+                                    </div>
+                                    
+                                    <div class="btn-group" role="group" aria-label="Basic example">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary"> Previous</button>
+                                        <button type="button" class="btn btn-sm btn-primary">1</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">2</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Next</button>
+                                      </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                 
+                </div>
+
+
+
+
 
             </div>
+        </div>
 
 
 
@@ -471,10 +826,51 @@ Yb      Yb   dP 88 Y88   88   88""   88 Y88   88   """""""" o.`Y8b 88""   Yb    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="index.js"></script>
     <script>
         function togglesidebar() {
-            document.getElementById('sidebar').classList.toggle('active')
-        }
+
+    
+
+            if(window.innerWidth <=768)
+            {
+                console.log('sdfsdf')
+                // alert('hello')
+                var sidebar = document.getElementById('sidebar')
+                sidebar.style.position = 'fixed'
+                sidebar.style.zIndex = '100'
+                sidebar.style.marginLeft = '0px'
+                sidebar.style.height = '100vh'
+            }
+            else 
+            {
+                // if(window.innerWidth >=800)
+                // {
+                //     console.log('hello')
+                //     var sidebar = document.getElementById('sidebar')
+                //     // sidebar.classList.toggle('mobileactive')
+                //     sidebar.style.marginLeft = null
+                //     sidebar.style.position=null
+                //     sidebar.style.transition = 'margin-left 0.1s'
+                //     sidebar.style.zIndex = null 
+                // }
+                console.log('clicking now')
+                var sidebar = document.getElementById('sidebar')
+               
+                sidebar.classList.toggle('active')
+            }
+        } 
+      
+        function closeSidebar()
+        {
+                var sidebar = document.getElementById('sidebar')
+                // sidebar.classList.toggle('mobileactive')
+                sidebar.style.marginLeft = '-300px'
+                sidebar.style.position=null
+                sidebar.style.transition = 'margin-left 0.1s'
+                sidebar.style.zIndex = null
+        }   
+       
     </script>
 
 </body>
