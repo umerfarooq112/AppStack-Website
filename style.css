@@ -82,10 +82,18 @@ o.`Y8b 88  8I  dY 88""   88""Yb  dP__Yb  88"Yb
     height: 10%;
     font-size: 10px;
 }
+.dropdown-text
+{
+    font-size: 14px;
+    color:gray;
+}
+.message-icon:hover .hover-number
+{
+    margin-top: -4px;
+    transition: margin-top .1s;
+}
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 990px) {
     #sidebar {
         margin-left: -300px;
 
